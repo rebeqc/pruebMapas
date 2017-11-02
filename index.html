@@ -43,6 +43,11 @@
 	    // Capa de tipo L.tileLayer definida con el complemento Leaflet-providers
       var sta = L.tileLayer.provider('Stamen.Watercolor');
       sta.addTo(mapa);
+	  
+      var thun = L.tileLayer.provider('Thunderforest.SpinalMap');
+      sta.addTo(mapa);
+      
+      
 	    
 	    
 	    
@@ -116,6 +121,7 @@
       var baseLayers = {
 	"OpenStreetMap": osm,
 	"Stamen Watercolor" : sta,
+	"Thunderforest.SpinalMap" : thun,
 	"MapBox" : mbox
       };
 	    
