@@ -37,6 +37,12 @@
       });    
       osm.addTo(mapa);
 	    
+	    // Capa de tipo L.tileLayer definida con el complemento Leaflet-providers
+      var sta = L.tileLayer.provider('Stamen.Watercolor');
+      sta.addTo(mapa);
+	    
+	    
+	    
       // retorna un color con base en la densidad poblacional
       function color(d) {
 	return d > 230000 ? '#a50f15' :
