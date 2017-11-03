@@ -138,13 +138,14 @@
 	"Stamen Watercolor" : sta,
 	"OpenMapSurfer.Roads" : surf,
 	"MapBox" : mbox,
-	"Stamen_Toner" : Stamen_Toner,
-	"Provincias" : wmsLayer
+	"Stamen_Toner" : Stamen_Toner
+//	"Provincias" : wmsLayer,
       };
 	    
       var overlays = {
 	"Densidad poblacional": dpoblacion,
-//	"Cantón": canton
+//	"Cantón": canton,
+	"Provincias" : wmsLayer
       };
 	    
       L.control.layers(baseLayers, overlays).addTo(mapa);
