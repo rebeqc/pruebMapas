@@ -44,8 +44,8 @@
       var sta = L.tileLayer.provider('Stamen.Watercolor');
       sta.addTo(mapa);
 	  
-      var thun = L.tileLayer.provider('Thunderforest.SpinalMap');
-      thun.addTo(mapa);
+      var surf = L.tileLayer.provider('OpenMapSurfer.Roads');
+      surf.addTo(mapa);
       
       
 	    
@@ -121,7 +121,7 @@
       var baseLayers = {
 	"OpenStreetMap": osm,
 	"Stamen Watercolor" : sta,
-	"Thunderforest.SpinalMap" : thun,
+	"OpenMapSurfer.Roads" : surf,
 	"MapBox" : mbox
       };
 	    
